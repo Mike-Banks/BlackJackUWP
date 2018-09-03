@@ -95,8 +95,28 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="BusinessLogic\BlackJackGame.cs" />
+    <Compile Include="BusinessLogic\CardGame.cs" />
+    <Compile Include="DataPersistence\BlackJackTextSerializer.cs" />
+    <Compile Include="DataTypes\BlackJackDealer.cs" />
+    <Compile Include="DataTypes\BlackJackUser.cs" />
+    <Compile Include="DataTypes\Card.cs" />
+    <Compile Include="DataTypes\CardDeck.cs" />
+    <Compile Include="DataTypes\Player.cs" />
+    <Compile Include="DataTypes\User.cs" />
+    <Compile Include="Presentation\BlackJack.xaml.cs">
+      <DependentUpon>BlackJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\CardPage.cs" />
+    <Compile Include="Presentation\InstructionsPage.xaml.cs">
+      <DependentUpon>InstructionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\NavMenuItem.cs" />
+    <Compile Include="Presentation\SplashPage.xaml.cs">
+      <DependentUpon>SplashPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -107,7 +127,62 @@
     <None Include="BlackJackApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\background.png" />
+    <Content Include="Assets\blackjackpic.jpg" />
+    <Content Include="Assets\Cards\c01.png" />
+    <Content Include="Assets\Cards\c02.png" />
+    <Content Include="Assets\Cards\c03.png" />
+    <Content Include="Assets\Cards\c04.png" />
+    <Content Include="Assets\Cards\c05.png" />
+    <Content Include="Assets\Cards\c06.png" />
+    <Content Include="Assets\Cards\c07.png" />
+    <Content Include="Assets\Cards\c08.png" />
+    <Content Include="Assets\Cards\c09.png" />
+    <Content Include="Assets\Cards\c10.png" />
+    <Content Include="Assets\Cards\c11.png" />
+    <Content Include="Assets\Cards\c12.png" />
+    <Content Include="Assets\Cards\c13.png" />
+    <Content Include="Assets\Cards\cardBack_blue1.png" />
+    <Content Include="Assets\Cards\cardBack_red1.png" />
+    <Content Include="Assets\Cards\d01.png" />
+    <Content Include="Assets\Cards\d02.png" />
+    <Content Include="Assets\Cards\d03.png" />
+    <Content Include="Assets\Cards\d04.png" />
+    <Content Include="Assets\Cards\d05.png" />
+    <Content Include="Assets\Cards\d06.png" />
+    <Content Include="Assets\Cards\d07.png" />
+    <Content Include="Assets\Cards\d08.png" />
+    <Content Include="Assets\Cards\d09.png" />
+    <Content Include="Assets\Cards\d10.png" />
+    <Content Include="Assets\Cards\d11.png" />
+    <Content Include="Assets\Cards\d12.png" />
+    <Content Include="Assets\Cards\d13.png" />
+    <Content Include="Assets\Cards\h01.png" />
+    <Content Include="Assets\Cards\h02.png" />
+    <Content Include="Assets\Cards\h03.png" />
+    <Content Include="Assets\Cards\h04.png" />
+    <Content Include="Assets\Cards\h05.png" />
+    <Content Include="Assets\Cards\h06.png" />
+    <Content Include="Assets\Cards\h07.png" />
+    <Content Include="Assets\Cards\h08.png" />
+    <Content Include="Assets\Cards\h09.png" />
+    <Content Include="Assets\Cards\h10.png" />
+    <Content Include="Assets\Cards\h11.png" />
+    <Content Include="Assets\Cards\h12.png" />
+    <Content Include="Assets\Cards\h13.png" />
+    <Content Include="Assets\Cards\s01.png" />
+    <Content Include="Assets\Cards\s02.png" />
+    <Content Include="Assets\Cards\s03.png" />
+    <Content Include="Assets\Cards\s04.png" />
+    <Content Include="Assets\Cards\s05.png" />
+    <Content Include="Assets\Cards\s06.png" />
+    <Content Include="Assets\Cards\s07.png" />
+    <Content Include="Assets\Cards\s08.png" />
+    <Content Include="Assets\Cards\s09.png" />
+    <Content Include="Assets\Cards\s10.png" />
+    <Content Include="Assets\Cards\s11.png" />
+    <Content Include="Assets\Cards\s12.png" />
+    <Content Include="Assets\Cards\s13.png" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -115,13 +190,30 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="Presentation\BlackJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Presentation\InstructionsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Presentation\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Presentation\SplashPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -131,6 +223,7 @@
       <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

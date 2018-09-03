@@ -13,18 +13,23 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace BlackJackApp
+//CLASS/PAGE AUTHOR: Michael Banks
+namespace BlackJackApp.Presentation
 {
+    
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Class used with the Instructions Page - NO CODE IS NEEDED
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class InstructionsPage : Page
     {
-        public MainPage()
+        
+        /// <summary>
+        /// Creates the Page and draws it to the screen
+        /// </summary>
+        public InstructionsPage()
         {
             this.InitializeComponent();
         }
+
     }
 }
