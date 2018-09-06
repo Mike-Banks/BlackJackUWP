@@ -1,6 +1,6 @@
 # BlackJackUWP
 
-A Blackjack UWP Application built on Microsoft's .NET Framework. No real money is involved, but the app can be used to practice before actually gambling, an alternative for those who do not wish to use real money, or for newcomers trying to the game.
+A Blackjack UWP Application built on Microsoft's .NET Framework using C# and XAML with Visual Studio. No real money is involved, but the app can be used to practice before actually gambling, an alternative for those who do not wish to use real money, or for newcomers trying to the game.
 
 Currently in Development:
 - Add ScrollViewer to Instructions Page so that the text can always be seen
