@@ -1,6 +1,6 @@
 # CLICK TO WATCH DEMO OF THE APP
 
-[![BlackJackUWP Demo Video](https:\/\/i.ytimg.com\/vi\/3aOHM_HoLvM\/default.jpg)](https://www.youtube.com/watch?v=3aOHM_HoLvM)
+[![BlackJackUWP Demo Video](https:\/\/i.ytimg.com\/vi\/3aOHM_HoLvM\/hqdefault.jpg)](https://www.youtube.com/watch?v=3aOHM_HoLvM)
 
 # BlackJackUWP
 
